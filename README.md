@@ -17,7 +17,7 @@ This module is part of the larger Python programming course offered by St. Ignat
 This Python course covers a wide range of topics, designed to provide you with a solid foundation in programming, from simple data types to advanced concepts like Object-Oriented Programming and data structures. Each module is carefully crafted to build upon the previous one, ensuring a comprehensive understanding of Python programming.
 
 ## Modules Covered:
-- [Variables and Data Types](https://github.com/YuriODev/python-st-ignatius-01-simple-data-types/blob/main/README.md) 📊
+- [Variables and Data Types 📊](https://github.com/YuriODev/python-st-ignatius-01-simple-data-types/blob/main/README.md)
 - **Conditional Statements (Current Module)**
 - [Iterations and Loops ➿](https://github.com/YuriODev/python-st-ignatius-03-iterations-and-loops/blob/main/README.md)
 - [String Manipulation 🧵](https://github.com/YuriODev/python-st-ignatius-04-string-manipulation/blob/main/README.md)
