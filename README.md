@@ -8,7 +8,7 @@ This module is part of the larger Python programming course offered by St. Ignat
 
 [Course Repository: Comprehensive Python Course](https://github.com/YuriODev/St-Ignatius-Python-Course)
 
-⬅️  [Previous Topic: Variables and Datatypes](https://github.com/YuriODev/python-st-ignatius-01-variables-and-datatypes/blob/main/README.md)
+⬅️  [Previous Topic: Variables and Datatypes](https://github.com/YuriODev/python-st-ignatius-01-simple-data-types/blob/main/README.md)
 
 ➡️ [Next Topic: Iterations and Loops](https://github.com/YuriODev/python-st-ignatius-03-iterations-and-loops/blob/main/README.md)
 
