@@ -1,23 +1,23 @@
 import unittest
 import subprocess
+import os
 
+class TestNextDayDateValidation(unittest.TestCase):
+    def run_exercise(self, input_value):
+        exercise_file_path = os.path.join(os.path.dirname(__file__), "example_21.py")
+        return subprocess.check_output(['python3', exercise_file_path], input=input_value, text=True, universal_newlines=True)
 
-class TestExample1(unittest.TestCase):
-    def test_output_1981(self):
-        # Test when the input is 1981
-        output = subprocess.check_output(['python3', 'example_1.py'], input='1981\n', text=True)
-        self.assertIn('The tens place digit of 1981 is 8', output)
+    def test_end_of_month(self):
+        output = self.run_exercise("30\n4\n2020\n")
+        self.assertIn("01.05.2020", output)
 
-    def test_output_158(self):
-        # Test when the input is 158
-        output = subprocess.check_output(['python3', 'example_1.py'], input='158\n', text=True)
-        self.assertIn('The tens place digit of 158 is 5', output)
+    def test_end_of_february_leap_year(self):
+        output = self.run_exercise("28\n2\n2020\n")
+        self.assertIn("29.02.2020", output)
 
-    def test_output_5(self):
-        # Test when the input is 5
-        output = subprocess.check_output(['python3', 'example_1.py'], input='5\n', text=True)
-        self.assertIn('The tens place digit of 5 is 0', output)
-
+    def test_end_of_year(self):
+        output = self.run_exercise("31\n12\n2020\n")
+        self.assertIn("01.01.2021", output)
 
 if __name__ == '__main__':
     unittest.main()
