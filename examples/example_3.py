@@ -1,9 +1,16 @@
-# Read the input number from the user
-t = int(input("Enter the number of minutes after midnight: "))
+# Input: A number from the user
+number = float(input("Enter a number: "))
 
-# Calculate the hours and minutes
-hours = t // 60
-minutes = t % 60
+# Initialize an empty string for the output message
+output = ""
 
-# Print the result using f-string
-print(f"{hours}\n{minutes}")
+# Conditional statements to determine the nature of the number and assign an appropriate message
+if number > 0:
+    output = "It is a positive number"
+elif number < 0:
+    output = "It is a negative number"
+else:
+    output = "It is Zero"
+
+# Print the output message
+print(output)
