@@ -1,22 +1,31 @@
 import unittest
 import subprocess
+import os
+
+# This is a general approach; you'll need to define exercise_file_path for each specific script you're testing
+exercise_file_path = os.path.join(os.path.dirname(__file__), "example_4.py")  # Adjust "exercise_1.py" accordingly
 
 
-class TestExample4(unittest.TestCase):
-    def test_output_430_1_40(self):
-        # Test when the inputs are 430, 1, 40
-        output = subprocess.check_output(['python3', 'example_4.py'], input='430\n1\n40\n', text=True)
-        self.assertEqual(output, 'Enter the number of minutes Helen needs to sleep: Enter the hour Helen goes to bed: Enter the minute Helen goes to bed: 8\n50\n')
+class TestSpacecraftTrajectory(unittest.TestCase):
+    def run_exercise(self, input_value):
+        """Helper method to run the exercise script with the provided input and return its output."""
+        return subprocess.check_output(['python3', exercise_file_path], input=input_value, text=True, universal_newlines=True)
 
-    def test_output_300_23_0(self):
-        # Test when the inputs are 300, 23, 0
-        output = subprocess.check_output(['python3', 'example_4.py'], input='300\n23\n0\n', text=True)
-        self.assertEqual(output, 'Enter the number of minutes Helen needs to sleep: Enter the hour Helen goes to bed: Enter the minute Helen goes to bed: 4\n0\n')
+    def test_fall_to_earth(self):
+        output = self.run_exercise("5\n")
+        self.assertIn("The device will fall to the Earth's surface.", output)
 
-    def test_output_1440_0_0(self):
-        # Test when the inputs are 1440, 0, 0
-        output = subprocess.check_output(['python3', 'example_4.py'], input='1440\n0\n0\n', text=True)
-        self.assertEqual(output, 'Enter the number of minutes Helen needs to sleep: Enter the hour Helen goes to bed: Enter the minute Helen goes to bed: 0\n0\n')
+    def test_earth_satellite(self):
+        output = self.run_exercise("8\n")
+        self.assertIn("The device will become a satellite of the Earth.", output)
+
+    def test_sun_satellite(self):
+        output = self.run_exercise("12\n")
+        self.assertIn("The device will become a satellite of the Sun.", output)
+
+    def test_leave_solar_system(self):
+        output = self.run_exercise("17\n")
+        self.assertIn("The device will leave the Solar System.", output)
 
 
 if __name__ == '__main__':
