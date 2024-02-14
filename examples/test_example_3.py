@@ -1,22 +1,27 @@
 import unittest
 import subprocess
+import os
+
+# This is a general approach; you'll need to define exercise_file_path for each specific script you're testing
+exercise_file_path = os.path.join(os.path.dirname(__file__), "example_3.py")  # Adjust "exercise_1.py" accordingly
 
 
 class TestExample3(unittest.TestCase):
-    def test_output_450(self):
-        # Test when the input is 450
-        output = subprocess.check_output(['python3', 'example_3.py'], input='450\n', text=True)
-        self.assertEqual(output, 'Enter the number of minutes after midnight: 7\n30\n')
+    def run_exercise(self, input_value):
+        """Helper method to run the exercise script with the provided input and return its output."""
+        return subprocess.check_output(['python3', exercise_file_path], input=input_value, text=True, universal_newlines=True)
 
-    def test_output_1240(self):
-        # Test when the input is 1240
-        output = subprocess.check_output(['python3', 'example_3.py'], input='1240\n', text=True)
-        self.assertEqual(output, 'Enter the number of minutes after midnight: 20\n40\n')
+    def test_positive_number(self):
+        output = self.run_exercise("10\n")
+        self.assertIn("It is a positive number", output)
 
-    def test_output_150(self):
-        # Test when the input is 150
-        output = subprocess.check_output(['python3', 'example_3.py'], input='150\n', text=True)
-        self.assertEqual(output, 'Enter the number of minutes after midnight: 2\n30\n')
+    def test_negative_number(self):
+        output = self.run_exercise("-1\n")
+        self.assertIn("It is a negative number", output)
+
+    def test_zero(self):
+        output = self.run_exercise("0\n")
+        self.assertIn("It is Zero", output)
 
 
 if __name__ == '__main__':
