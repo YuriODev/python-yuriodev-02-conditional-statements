@@ -1,13 +1,18 @@
-# Read the input number from the user
-n = int(input("Enter a three-digit number: "))
+# Input: Name of the month from the user
+month = input("Enter the name of the month: ")
 
-# Extract the hundreds, tens, and units digits
-hundreds = n // 100
-tens = (n // 10) % 10
-units = n % 10
+# Initialize an empty string for the output message
+output = ""
 
-# Construct the reversed number
-reversed_n = units * 100 + tens * 10 + hundreds
+# Determine the number of days in the month using if-else
+if month == "January" or month == "March" or month == "May" or month == "July" or month == "August" or month == "October" or month == "December":
+    output = f"{month} has 31 days in it."
+elif month == "April" or month == "June" or month == "September" or month == "November":
+    output = f"{month} has 30 days in it."
+elif month == "February":
+    output = "February has 28 or 29 days in it."
+else:
+    output = "Invalid month name"
 
-# Print the result
-print(reversed_n)
+# Print the output message
+print(output)
