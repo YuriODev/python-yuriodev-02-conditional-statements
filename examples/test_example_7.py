@@ -1,22 +1,23 @@
 import unittest
 import subprocess
+import os
+
+# This is a general approach; you'll need to define exercise_file_path for each specific script you're testing
+exercise_file_path = os.path.join(os.path.dirname(__file__), "example_7.py")  # Adjust "exercise_1.py" accordingly
 
 
-class TestExample7(unittest.TestCase):
-    def test_output_456712_2(self):
-        # Test when the inputs are 456712 and 2
-        output = subprocess.check_output(['python3', 'example_7.py'], input='456712\n2\n', text=True)
-        self.assertEqual(output, 'Enter the integer: Enter the number of digits to cut off: 4567\n')
+class TestMagicDate(unittest.TestCase):
+    def run_exercise(self, input_value):
+        """Helper method to run the exercise script with the provided input and return its output."""
+        return subprocess.check_output(['python3', exercise_file_path], input=input_value, text=True, universal_newlines=True)
 
-    def test_output_123456_3(self):
-        # Test when the inputs are 123456 and 3
-        output = subprocess.check_output(['python3', 'example_7.py'], input='123456\n3\n', text=True)
-        self.assertEqual(output, 'Enter the integer: Enter the number of digits to cut off: 123\n')
+    def test_magic_date(self):
+        output = self.run_exercise("2\n10\n20\n")
+        self.assertIn("The date is magic!", output)
 
-    def test_output_123456_6(self):
-        # Test when the inputs are 123456 and 6
-        output = subprocess.check_output(['python3', 'example_7.py'], input='123456\n6\n', text=True)
-        self.assertEqual(output, 'Enter the integer: Enter the number of digits to cut off: 0\n')
+    def test_not_magic_date(self):
+        output = self.run_exercise("3\n11\n21\n")
+        self.assertIn("The date is not magic.", output)
 
 
 if __name__ == '__main__':
