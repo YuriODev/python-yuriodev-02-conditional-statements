@@ -1,25 +1,20 @@
-# Define constants for the number of seconds in a day, hour, and minute
-SECONDS_IN_A_DAY = 24 * 60 * 60
-SECONDS_IN_AN_HOUR = 60 * 60
-SECONDS_IN_A_MINUTE = 60
+# Input: Student's test score
+score = int(input("Enter the test score: "))
 
-# Read the input number from the user
-s = int(input("Enter the number of seconds: "))
+# Initialize an empty string for the output message
+output = ""
 
-# Calculate the number of days
-days = s // SECONDS_IN_A_DAY
-s %= SECONDS_IN_A_DAY
+# Conditional statements to determine the grade
+if score >= 90:
+    output = "Your grade is A."
+elif score >= 80:
+    output = "Your grade is B."
+elif score >= 70:
+    output = "Your grade is C."
+elif score >= 60:
+    output = "Your grade is D."
+else:
+    output = "Your grade is F."
 
-# Calculate the number of hours
-hours = s // SECONDS_IN_AN_HOUR
-s %= SECONDS_IN_AN_HOUR
-
-# Calculate the number of minutes
-minutes = s // SECONDS_IN_A_MINUTE
-s %= SECONDS_IN_A_MINUTE
-
-# The remaining seconds
-seconds = s
-
-# Print the result
-print(f"{days} day(s), {hours} hour(s), {minutes} minute(s), {seconds} second(s)")
+# Print the output message
+print(output)
