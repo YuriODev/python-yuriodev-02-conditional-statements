@@ -1,15 +1,26 @@
-# Define constants for the number of minutes in an hour and the number of hours in a day
-MINUTES_IN_AN_HOUR = 60
-HOURS_IN_A_DAY = 24
+# Input: Number representing a day of the week
+day_number = int(input("Enter the day number: "))
 
-# Read the input number from the user
-n = int(input("Enter the number of minutes that have passed since midnight: "))
+# Initialize an empty string for the output message
+output = ""
 
-# Calculate the number of hours
-hours = (n // MINUTES_IN_AN_HOUR) % HOURS_IN_A_DAY
+# Conditional statements to assign the name of the day
+if day_number == 1:
+    output = "Monday"
+elif day_number == 2:
+    output = "Tuesday"
+elif day_number == 3:
+    output = "Wednesday"
+elif day_number == 4:
+    output = "Thursday"
+elif day_number == 5:
+    output = "Friday"
+elif day_number == 6:
+    output = "Saturday"
+elif day_number == 7:
+    output = "Sunday"
+else:
+    output = "Invalid day number"
 
-# Calculate the number of minutes
-minutes = n % MINUTES_IN_AN_HOUR
-
-# Print the result
-print(f"{hours}, {minutes}")
+# Print the output message
+print(output)
