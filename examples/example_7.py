@@ -1,12 +1,16 @@
-# Read the input numbers from the user
-n = int(input("Enter the integer: "))
-k = int(input("Enter the number of digits to cut off: "))
+# Input: Day, month, and year (last two digits) from the user
+day = int(input("Enter the day: "))
+month = int(input("Enter the month: "))
+year = int(input("Enter the last two digits of the year: "))
 
-# Calculate the divisor
-divisor = 10**k
+# Initialize an empty string for the output message
+output = ""
 
-# Calculate the result
-result = n // divisor
+# Check if the product of day and month equals the year
+if day * month == year:
+    output = "The date is magic!"
+else:
+    output = "The date is not magic."
 
-# Print the result
-print(result)
+# Print the output message
+print(output)
