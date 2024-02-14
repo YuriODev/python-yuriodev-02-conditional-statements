@@ -1,8 +1,25 @@
-# Read the input number from the user
-n = int(input("Enter the number of natural numbers to sum: "))
+# Input: Number of purchased software sets from the user
+units = int(input("Enter the number of software sets purchased: "))
 
-# Calculate the sum of the first n natural numbers
-sum_of_numbers = n * (n + 1) // 2
+# Initialize variables for the discount percentage and cost per unit
+cost_per_unit = 2700
+discount_percentage = 0
 
-# Print the result
-print(sum_of_numbers)
+# Determine the discount percentage based on the number of units
+if 10 <= units <= 19:
+    discount_percentage = 10
+elif 20 <= units <= 49:
+    discount_percentage = 20
+elif 50 <= units <= 99:
+    discount_percentage = 30
+elif units >= 100:
+    discount_percentage = 40
+
+# Calculate total cost after discount
+total_cost = units * cost_per_unit * (1 - discount_percentage / 100)
+
+# Prepare the output message
+output = f"The amount of discount is {discount_percentage}%, total amount of the purchase after the discount is £{total_cost:.2f}"
+
+# Print the output message
+print(output)
