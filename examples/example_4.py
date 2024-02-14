@@ -1,15 +1,18 @@
-# Read the input numbers from the user
-t = int(input("Enter the number of minutes Helen needs to sleep: "))
-h = int(input("Enter the hour Helen goes to bed: "))
-m = int(input("Enter the minute Helen goes to bed: "))
+# Input: Initial speed of the spacecraft in km/s
+v = float(input("Enter the spacecraft's initial speed in km/s: "))
 
-# Calculate the total minutes from midnight when Helen should wake up
-total_minutes = h * 60 + m + t
+# Initialize an empty string for the output message
+output = ""
 
-# Convert the total minutes to hours and minutes
-wake_up_hour = (total_minutes // 60) % 24
-wake_up_minute = total_minutes % 60
+# Conditional statements to determine the spacecraft's trajectory
+if v < 7.8:
+    output = "The device will fall to the Earth's surface."
+elif 7.8 <= v < 11.2:
+    output = "The device will become a satellite of the Earth."
+elif 11.2 <= v < 16.4:
+    output = "The device will become a satellite of the Sun."
+else:
+    output = "The device will leave the Solar System."
 
-# Print the hours and minutes on separate lines
-print(wake_up_hour)
-print(wake_up_minute)
+# Print the output message
+print(output)
