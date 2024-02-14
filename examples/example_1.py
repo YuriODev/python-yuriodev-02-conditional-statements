@@ -1,8 +1,16 @@
-# Read the input number from the user
-number = int(input("Enter a natural number: "))
+# Input: Temperature value from the user
+temperature = float(input("Enter temperature in degrees Celsius: "))
 
-# Get ten place digit using integer division and modulo
-tens_place = (number // 10) % 10
+# Initialize an empty string for the output message
+output = ""
 
-# Print the result using f-string
-print(f"The tens place digit of {number} is {tens_place}")
+# Conditional statements to check the temperature and assign appropriate messages
+if temperature <= 0:
+    output = "A cold, isn't it?"
+elif temperature > 0 and temperature < 10:
+    output = "Cool."
+else:
+    output = "Nice weather we're having."
+
+# Print the output message
+print(output)
