@@ -1,22 +1,28 @@
 import unittest
 import subprocess
+import os
+
+# This is a general approach; you'll need to define exercise_file_path for each specific script you're testing
+exercise_file_path = os.path.join(os.path.dirname(__file__), "example_2.py")  # Adjust "exercise_1.py" accordingly
 
 
 class TestExample2(unittest.TestCase):
-    def test_output_153(self):
-        # Test when the input is 153
-        output = subprocess.check_output(['python3', 'example_2.py'], input='153\n', text=True)
-        self.assertIn('The sum of the digits of 153 is 9', output)
+    def run_exercise(self, input_value):
+        """Helper method to run the exercise script with the provided input and return its output."""
+        return subprocess.check_output(['python3', exercise_file_path], input=input_value, text=True, universal_newlines=True)
 
-    def test_output_123(self):
-        # Test when the input is 123
-        output = subprocess.check_output(['python3', 'example_2.py'], input='123\n', text=True)
-        self.assertIn('The sum of the digits of 123 is 6', output)
+    def test_win(self):
+        output = self.run_exercise("3\n")
+        self.assertIn("win", output)
 
-    def test_output_565(self):
-        # Test when the input is 565
-        output = subprocess.check_output(['python3', 'example_2.py'], input='565\n', text=True)
-        self.assertIn('The sum of the digits of 565 is 16', output)
+    def test_draw(self):
+        output = self.run_exercise("1\n")
+        self.assertIn("draw", output)
+
+    def test_lose(self):
+        output = self.run_exercise("0\n")
+        self.assertIn("lose", output)
+
 
 
 if __name__ == '__main__':
