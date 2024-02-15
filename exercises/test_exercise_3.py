@@ -2,30 +2,32 @@ import unittest
 import subprocess
 import os
 
-# Define the full path to the exercise script
-exercise_file_path = os.path.join(os.path.dirname(__file__), "exercise_3.py")
 
-
-class TestExample1(unittest.TestCase):
+class TestExercise3(unittest.TestCase):
     def run_exercise(self, input_value):
         """Helper method to run the exercise script with the provided input and return its output."""
+        exercise_file_path = os.path.join(os.path.dirname(__file__), "exercise_3.py")
         return subprocess.check_output(['python3', exercise_file_path], input=input_value, text=True, universal_newlines=True)
 
-    def test_example_1(self):
-        """Test the provided example 1."""
-        output = self.run_exercise("3602\n")
-        self.assertEqual(output, "1:00:02\n")
+    def test_green(self):
+        """Number 0 is green."""
+        output = self.run_exercise("0\n")
+        self.assertIn("Green", output)
 
-    def test_example_2(self):
-        """Test the provided example 2."""
-        output = self.run_exercise("4556789\n")
-        self.assertEqual(output, "17:46:29\n")
+    def test_black(self):
+        """Number 24 is black."""
+        output = self.run_exercise("24\n")
+        self.assertIn("Black", output)
 
-    def test_example_3(self):
-        """Test the provided example 3."""
-        output = self.run_exercise("4568\n")
-        self.assertEqual(output, "1:16:08\n")
+    def test_red(self):
+        """Number 23 is red."""
+        output = self.run_exercise("23\n")
+        self.assertIn("Red", output)
 
+    def test_bet_not_play(self):
+        """Number 37 will not play."""
+        output = self.run_exercise("37\n")
+        self.assertIn("The bet will not play!", output)
 
 
 if __name__ == '__main__':
