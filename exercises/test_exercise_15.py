@@ -13,17 +13,17 @@ class TestExercise15(unittest.TestCase):
     def test_end_of_month_transition(self):
         """Test end-of-month transition."""
         output = self.run_exercise("31\n1\n2020\n")
-        self.assertIn("01.02.2020", output)
+        self.assertIn("1.2.2020", output)
 
     def test_leap_year_feb_end(self):
         """Test February end in a leap year."""
         output = self.run_exercise("29\n2\n2020\n")
-        self.assertIn("01.03.2020", output)
+        self.assertIn("1.3.2020", output)
 
     def test_end_of_year_transition(self):
         """Test end-of-year transition."""
         output = self.run_exercise("31\n12\n2020\n")
-        self.assertIn("01.01.2021", output)
+        self.assertIn("1.1.2021", output)
 
 
 if __name__ == '__main__':
