@@ -12,17 +12,17 @@ class TestExercise9(unittest.TestCase):
 
     def test_sum_greater(self):
         """Sum of the first and last digits is greater than the second."""
-        output = self.run_exercise("531\n")
+        output = self.run_exercise("123\n")
         self.assertIn(">", output)
 
     def test_sum_lesser(self):
         """Sum of the first and last digits is less than the second."""
-        output = self.run_exercise("254\n")
+        output = self.run_exercise("251\n")
         self.assertIn("<", output)
 
     def test_sum_equal(self):
         """Sum of the first and last digits is equal to the second."""
-        output = self.run_exercise("423\n")
+        output = self.run_exercise("143\n")
         self.assertIn("=", output)
 
 
