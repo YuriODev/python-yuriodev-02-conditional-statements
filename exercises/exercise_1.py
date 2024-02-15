@@ -1,4 +1,3 @@
-
 age_alex = int(input("Enter Alex's age: "))
 age_tatyana = int(input("Enter Tatyana's age: "))
 
