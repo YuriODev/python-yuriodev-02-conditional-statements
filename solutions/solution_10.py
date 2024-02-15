@@ -1,8 +1,2 @@
-# Read the input
-a = float(input())
+# Your solution to Exercise 10
 
-# Calculate the angle
-angle = (a % 30) * 12
-
-# Print the angle
-print(angle)
