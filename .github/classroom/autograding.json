@@ -1,5 +1,5 @@
 {
-  "tests": [
+  "tests Ex1 - Ex2": [
     {
       "name": "Exercise 1 - Older Person",
       "run": "pytest exercises/test_exercise_1.py",
@@ -11,7 +11,8 @@
       "run": "pytest exercises/test_exercise_2.py",
       "timeout": 5,
       "points": 10
-    },
+    }],
+    "tests Ex3 - Ex18": [
     {
       "name": "Exercise 3 - Roulette Color Prediction",
       "run": "pytest exercises/test_exercise_3.py",
