@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Input: Six-digit ticket number
 ticket_number = int(input("Enter a six-digit ticket number: "))
 
@@ -21,3 +22,7 @@ else:
 
 # Output the result
 print(output)
+=======
+# Your solution to Exercise 17
+
+>>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa

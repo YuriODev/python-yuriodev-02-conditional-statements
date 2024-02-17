@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Input: A number (up to four digits)
 number = int(input("Enter a number (up to 9999): "))
 
@@ -17,3 +18,7 @@ is_unique = (thousands != hundreds or thousands == 0 or hundreds == 0) and \
 
 # Output the result
 print(is_unique)
+=======
+# Your solution to Exercise 13
+
+>>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa

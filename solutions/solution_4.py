@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 grade = int(input("Enter the school grade (1-12): "))
 
 if 1 <= grade <= 3:
@@ -10,3 +11,7 @@ elif 10 <= grade <= 12:
     print("high level")
 else:
     print("level is absent")
+=======
+# Your solution to Exercise 4
+
+>>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa

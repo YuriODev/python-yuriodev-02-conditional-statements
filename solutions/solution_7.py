@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 operation = input("Enter the operation (+, -, *, /, mod, pow, div): ")
@@ -29,3 +30,7 @@ else:
     result = "Invalid operation"
 
 print(result)
+=======
+# Your solution to Exercise 7
+
+>>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa

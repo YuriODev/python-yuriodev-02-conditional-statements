@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Input: Current date (day, month, year)
 day = int(input("Enter the day: "))
 month = int(input("Enter the month: "))
@@ -29,3 +30,7 @@ output = f"{day:02d}.{month:02d}.{year}"
 
 # Output the previous day's date
 print(output)
+=======
+# Your solution to Exercise 16
+
+>>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa
