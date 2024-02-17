@@ -125,7 +125,7 @@ The problem tests the ability to use conditional statements to classify an input
 | 2   | 3.6<br>10<br>-3 | 0.27 and -3.05 |
 | 3   | 2<br>4<br>2  | -1.00 |
 | 4   | 1<br>2<br>3  | No roots. |
-
+| 5   | 0<br>0<br>0  | Infinite roots. |
 
 ### Note:
 The problem tests the ability to solve a quadratic equation and handle different cases of discriminant values.
