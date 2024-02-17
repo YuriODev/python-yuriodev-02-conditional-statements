@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 number = int(input("Enter a three-digit number: "))
 
@@ -14,7 +13,3 @@ elif sum_comparison < second_digit:
     print("<")
 else:
     print("=")
-=======
-# Your solution to Exercise 9
-
->>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa
