@@ -1,6 +1,3 @@
-# Your solution to Exercise 6
-
-<<<<<<< HEAD
 x1, y1 = int(input("Enter x1: ")), int(input("Enter y1: "))
 x2, y2 = int(input("Enter x2: ")), int(input("Enter y2: "))
 
@@ -13,5 +10,3 @@ elif distance_a < distance_b:
     print("B is further from the origin.")
 else:
     print("A and B are at the same distance from the origin.")
-=======
->>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa
