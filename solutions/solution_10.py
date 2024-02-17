@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 x1, y1 = int(input("Enter x1: ")), int(input("Enter y1: "))
 x2, y2 = int(input("Enter x2: ")), int(input("Enter y2: "))
@@ -19,7 +18,3 @@ elif a2 + b2 == c2 or b2 + c2 == a2 or c2 + a2 == b2:
     print("Yes")
 else:
     print("No")
-=======
-# Your solution to Exercise 10
-
->>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa
