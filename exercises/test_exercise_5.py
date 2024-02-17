@@ -56,7 +56,7 @@ class TestQuadraticSolver(unittest.TestCase):
         output = self.run_exercise(0, 0, 0)
         # The expected behavior needs to be defined based on how the script is supposed to handle this case.
         # This test might need adjustment based on the script's actual handling of all-zero input.
-        self.assertIn("Infinite roots.  ", output)  # Placeholder check
+        self.assertIn("Infinite roots.", output)  # Placeholder check
 
 if __name__ == '__main__':
     unittest.main()
