@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 a = float(input("Enter coefficient a: "))
 b = float(input("Enter coefficient b: "))
 c = float(input("Enter coefficient c: "))
@@ -27,7 +26,3 @@ else:
         output = f"{x}"
 
 print(output)
-=======
-# Your solution to Exercise 5
-
->>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa
