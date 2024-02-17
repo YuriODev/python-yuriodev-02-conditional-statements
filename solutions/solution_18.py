@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Predefined outcomes as constants
 SAY_HI = "Say hi."
 DONT_SAY_HI = "Don't say hi."
@@ -53,7 +52,3 @@ else:  # Don't remember the person's name
                 output = ADDRESS_WITH_NICKNAME
 
 print(output)
-=======
-# Your solution to Exercise 18
-
->>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa
