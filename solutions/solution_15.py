@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Input: Current date (day, month, year)
 day = int(input("Enter the day: "))
 month = int(input("Enter the month: "))
@@ -64,7 +63,3 @@ if output == "":
 
 # Output the next day's date, if valid
 print(output)
-=======
-# Your solution to Exercise 15
-
->>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa
