@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Input: A four-digit number
 number = int(input("Enter a four-digit number: "))
 
@@ -13,7 +12,3 @@ is_palindrome = (thousands == ones) and (hundreds == tens)
 
 # Output the result
 print(is_palindrome)
-=======
-# Your solution to Exercise 14
-
->>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa
