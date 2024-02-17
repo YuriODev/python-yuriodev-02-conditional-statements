@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Input: A four-digit number
 number = int(input("Enter a four-digit number: "))
 
@@ -19,7 +18,3 @@ result = thousands + hundreds + tens + ones
 
 # Output the result
 print(result)
-=======
-# Your solution to Exercise 12
-
->>>>>>> e2be20ee77cdbae9a6d1e5effe3c3653928557aa
