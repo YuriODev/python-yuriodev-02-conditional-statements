@@ -25,7 +25,7 @@ class TestExercise2(CustomTestCase):
         """
         Person is an infant.
         """
-        inputs = ["1\n"]
+        inputs = ["1"]
         output = self.run_exercise(inputs)
         expected_output = "You are an infant."
         self.assertInCustom(expected=expected_output,
@@ -35,7 +35,7 @@ class TestExercise2(CustomTestCase):
         """
         Person is a child.
         """
-        inputs = ["5\n"]
+        inputs = ["5"]
         output = self.run_exercise(inputs)
         expected_output = "You are a child."
         self.assertInCustom(expected=expected_output,
@@ -45,7 +45,7 @@ class TestExercise2(CustomTestCase):
         """
         Person is a teenager.
         """
-        inputs = ["15\n"]
+        inputs = ["15"]
         output = self.run_exercise(inputs)
         expected_output = "You are a teenager."
         self.assertInCustom(expected=expected_output,
@@ -55,7 +55,7 @@ class TestExercise2(CustomTestCase):
         """
         Person is an adult.
         """
-        inputs = ["25\n"]
+        inputs = ["25"]
         output = self.run_exercise(inputs)
         expected_output = "You are an adult."
         self.assertInCustom(expected=expected_output,
