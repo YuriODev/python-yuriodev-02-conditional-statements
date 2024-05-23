@@ -10,8 +10,12 @@ c = float(input("Enter coefficient c: "))
 # Initialize the output variable with the default value "No roots."
 output = "No roots."
 
+# Check if all coefficients are zero
+if a == 0 and b == 0 and c == 0:
+    output = "Infinite roots."
+
 # Check if coefficient a is equal to 0
-if a == 0:
+elif a == 0:
     # If coefficient a is 0, check if coefficient b is not equal to 0
     if b != 0:
         # If coefficient b is not 0, calculate the root
