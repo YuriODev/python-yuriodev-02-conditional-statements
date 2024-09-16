@@ -9,6 +9,7 @@ This module is part of the **YuriODev Python Comprehensive Course**, designed to
 [Course Repository: YuriODev Python Comprehensive Course](https://github.com/YurioDev/Python-Course)
 
 ⬅️ [Previous Topic: Variables and Data Types](https://github.com/YurioDev/python-yuriodev-01-simple-data-types/blob/main/README.md)  
+
 ➡️ [Next Topic: Iterations and Loops](https://github.com/YurioDev/python-yuriodev-03-iterations-and-loops/blob/main/README.md)
 
 ## 🎓 Course Overview
