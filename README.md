@@ -1,5 +1,11 @@
 # 📘 Conditional Statements in Python 
 
+![GitHub contributors](https://img.shields.io/github/contributors/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
+![License](https://img.shields.io/github/license/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
+
 Welcome to the second module of the **YuriODev Comprehensive Python Course**, focusing on **Conditional Statements**. This module is crucial for making decisions in your programs and executing code based on certain conditions.
 
 ## 🌟 Course Navigation 🧭
@@ -94,7 +100,7 @@ To further enhance your understanding of Python's **conditional statements** and
 We encourage you to explore beyond the exercises provided, delve into additional problems, and experiment with code.
 
 
-## 📜 License
+## 📢 License
 
 This project is licensed under a custom license:
 
@@ -103,3 +109,24 @@ This project is licensed under a custom license:
 - **Forks and Derivatives**: Permitted for personal and non-commercial purposes, provided this license is included in any derived works.
 
 For more details, refer to the [LICENSE](./LICENSE) file.
+
+---
+
+## 📢 Providing Feedback
+
+### 📞 Contact Me
+
+[![Contact Me](https://img.shields.io/badge/Contact-Me-blue?style=for-the-badge)](mailto:contact@yuriodev.co.uk)
+
+Your feedback helps us improve. If you have suggestions or comments, please raise an issue in this repository.
+
+
+## 💖 Support the Developer
+
+If you find this project helpful and would like to support its development, consider contributing through one of the following options:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/yuriodev)
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-blue?style=for-the-badge&logo=paypal)](https://paypal.me/yuriodev)
+[![Patreon](https://img.shields.io/badge/Support-Patreon-red?style=for-the-badge&logo=patreon)](https://www.patreon.com/YuriODev)
+
+Every contribution, no matter how small, helps and is greatly appreciated! 🙏
